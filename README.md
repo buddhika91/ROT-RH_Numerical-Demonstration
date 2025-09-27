@@ -51,5 +51,23 @@ match the imaginary parts of the nontrivial **Riemann zeta zeros** on the critic
 
 ## Example Output
 
-Console (abridged):
+Top-10 comparison (γ_true vs eigenvalue):
+ idx |   γ_true         |   γ_est          | abs_error
+-----+-----------------+-----------------+-----------
+   1 | 14.134725141735 | 14.134725141735 | 0.000e+00
+   2 | 21.022039638772 | 21.022039638772 | 1.066e-14
+   3 | 25.010857580146 | 25.010857580146 | 1.066e-13
+   4 | 30.424876125860 | 30.424876125859 | 2.842e-14
+   5 | 32.935061587739 | 32.935061587739 | 2.842e-14
+   6 | 37.586178158826 | 37.586178158826 | 9.948e-14
+   7 | 40.918719012147 | 40.918719012147 | 3.553e-14
+   8 | 43.327073280915 | 43.327073280915 | 2.132e-14
+   9 | 48.005150881167 | 48.005150881167 | 4.974e-14
+  10 | 49.773832477672 | 49.773832477672 | 3.553e-14
+
+[PASS] All eigenvalues match ζ-zero ordinates within tolerance 1e-09
+
+Saved CSV: demo_eigs_vs_zeros.csv
+Saved plot: demo_eigs_vs_zeros_scatter.png
+Mean abs error: 3.890e-14 | Max abs error: 1.066e-13
 
